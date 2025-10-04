@@ -1,9 +1,12 @@
 # Can Be Var
 
-Simple InteliJ plugin generating warning when explicit type declaration can be changed to a var.
+Simple IntelliJ plugin that generates a warning when an explicit type declaration can be changed to ***var***.
 
 ## Table of Contents
 - [Requirements](#requirements)
+- [Development](#development)
+- [Installation](#installation)
+- [Features](#features)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -12,7 +15,7 @@ Simple InteliJ plugin generating warning when explicit type declaration can be c
 - InteliJ Community Edition or Ultimate
 - Gradle
 
-## Installation/Running
+## Development
 * Clone the repository
 
 * Run
@@ -20,14 +23,21 @@ Simple InteliJ plugin generating warning when explicit type declaration can be c
 ./gradlew runIde 
 ```
 
+* Build
+```bash
+./gradlew buildPlugin
+```
+
+## Installation
+* Download the zip 
+* In InteliJ: Settings → Plugins → Install Plugin from Disk… → select zip.
+
 ## Features
 - Generate warning when var can be used
 - Provide quick fix allowing to replace the explicit type with var
 
-
 ## Contributing
-
-If you find any bugs contributions are welcomed.
+If you find any bugs or have ideas for new features contributions are welcomed.
 
 ## License
 
