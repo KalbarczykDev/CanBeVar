@@ -29,7 +29,7 @@ Simple IntelliJ plugin that generates a warning when an explicit type declaratio
 ```
 
 ## Installation
-* Download the zip 
+* Download the latest release.
 * In InteliJ: Settings → Plugins → Install Plugin from Disk… → select zip.
 
 ## Features
