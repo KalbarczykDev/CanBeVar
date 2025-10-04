@@ -42,7 +42,7 @@ public final class VarCanBeUsedInspection extends AbstractBaseJavaLocalInspectio
         public void applyFix(final @NotNull Project project, final @NotNull ProblemDescriptor problemDescriptor) {
             var element = problemDescriptor.getPsiElement();
 
-            if (!(element instanceof PsiLocalVariable typeElement)) return;
+            if (!(element instanceof PsiTypeElement typeElement)) return;
 
             var factory = JavaPsiFacade.getElementFactory(project);
             var newType = factory.createTypeElementFromText("var", null);
