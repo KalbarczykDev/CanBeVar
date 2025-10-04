@@ -1,0 +1,25 @@
+<idea-plugin>
+    <id>dev.kalbarczyk.CanBeVar</id>
+
+    <name>CanBeVar</name>
+
+    <vendor url="https://www.kalbarczyk.dev">kalbarczyk.dev</vendor>
+
+    <description><![CDATA[
+        Check if the var can be applied instead of explicit type.
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.java</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <localInspection
+                language="JAVA"
+                shortName="VarCanBeUsed"
+                displayName="Explicit type can be replaced with 'var'"
+                groupName="Java"
+                level="WARNING"
+                enabledByDefault="true"
+                implementationClass="dev.kalbarczyk.canbevar.VarCanBeUsedInspection"/>
+    </extensions>
+</idea-plugin>
