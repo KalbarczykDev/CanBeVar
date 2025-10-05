@@ -17,6 +17,10 @@ public final class VarCanBeUsedInspection extends AbstractBaseJavaLocalInspectio
 
                 if (initializer == null) return;
                 if ("var".equals(typeElement.getText())) return;
+
+                //lombok feature (final + var = val)
+                if ("val".equals(typeElement.getText())) return;
+
                 if (type.equalsToText("var")) return;
 
                 if (!(initializer.getType() instanceof PsiClassType)) return;
