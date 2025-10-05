@@ -35,6 +35,8 @@ Simple IntelliJ plugin that generates a warning when an explicit type declaratio
 ## Features
 - Generate warning when var can be used
 - Provide quick fix allowing to replace the explicit type with var
+- Option to change severity of warnings (not implemented)
+- Option to turn of warnings (not implemented)
 
 ## Contributing
 If you find any bugs or have ideas for new features contributions are welcomed.
