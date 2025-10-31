@@ -6,6 +6,9 @@ import com.intellij.psi.*;
 import org.jetbrains.annotations.NotNull;
 
 public final class VarCanBeUsedInspection extends AbstractBaseJavaLocalInspectionTool {
+
+    //TODO: add inspection for the for each
+
     @Override
     public @NotNull PsiElementVisitor buildVisitor(final @NotNull ProblemsHolder holder, final boolean isOnTheFly) {
         return new JavaElementVisitor() {
